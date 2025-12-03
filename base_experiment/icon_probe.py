@@ -1,4 +1,6 @@
 import os
+import random
+
 from torchvision.datasets import MNIST
 from flax import linen as nn
 from flax.training import train_state, orbax_utils
@@ -19,7 +21,7 @@ import pickle
 from utils import to_jax
 
 
-NUM_CLASSES = 10
+NUM_CLASSES = 100
 
 
 class CNN(nn.Module):
